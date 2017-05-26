@@ -33,7 +33,7 @@ public class PullToRefresh: NSObject {
     // MARK: - ScrollView & Observing
 
     private var scrollViewDefaultInsets = UIEdgeInsetsZero
-    weak var scrollView: UIScrollView? {
+    public weak var scrollView: UIScrollView? {
         willSet {
             removeScrollViewObserving()
         }
