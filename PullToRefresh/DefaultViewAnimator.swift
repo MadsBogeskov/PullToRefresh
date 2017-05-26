@@ -26,7 +26,7 @@ class DefaultViewAnimator: RefreshViewAnimator {
             
             var transform = CGAffineTransformIdentity
             transform = CGAffineTransformScale(transform, progress, progress)
-            transform = CGAffineTransformRotate(transform, CGFloat(M_PI) * progress * 2)
+            transform = CGAffineTransformRotate(transform, CGFloat(.pi) * progress * 2)
             refreshView.activityIndicator?.transform = transform
             
         case .Loading:
