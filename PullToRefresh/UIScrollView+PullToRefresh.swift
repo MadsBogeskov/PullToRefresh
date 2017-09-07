@@ -72,7 +72,7 @@ public extension UIScrollView {
         }
     }
     
-    func removeAllPullToRefresh() {
+    public func removeAllPullToRefresh() {
         removePullToRefresh(at: .top)
         removePullToRefresh(at: .bottom)
     }
